@@ -1,6 +1,8 @@
 ---
 deployment:
   tasks:
+    - echo "Deploy started..."
+
     # Set path public_html
     - export DEPLOYPATH=/home/mrkproje/public_html
 
@@ -15,3 +17,5 @@ deployment:
     - /usr/local/bin/php /home/mrkproje/github/main-apps/artisan config:cache
     - /usr/local/bin/php /home/mrkproje/github/main-apps/artisan route:cache
     - /usr/local/bin/php /home/mrkproje/github/main-apps/artisan view:cache
+
+    - echo "Deploy finished..."
