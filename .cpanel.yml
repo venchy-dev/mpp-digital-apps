@@ -1,4 +1,11 @@
 deployment:
   tasks:
     - echo "==== Deploy pipeline started ===="
+
+    # Set path public_html
+    - export DEPLOYPATH=/home/mrkproje/public_html
+
+    # Test copy 1 file index.php dari Laravel ke public_html
+    - /bin/rsync -av --delete /home/mrkproje/github/main-apps/public/ $DEPLOYPATH/
+
     - echo "==== Deploy pipeline finished ===="
