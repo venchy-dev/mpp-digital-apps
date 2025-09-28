@@ -11,7 +11,7 @@ deployment:
     - /bin/cp -R /home/mrkproje/github/main-apps/public/* $DEPLOYPATH/
 
     # Install dependency composer di folder Laravel
-    # - /opt/cpanel/composer/bin/composer install --no-dev --optimize-autoloader --working-dir=/home/mrkproje/github/main-apps
+    - /opt/cpanel/composer/bin/composer install --no-dev --optimize-autoloader --working-dir=/home/mrkproje/github/main-apps
 
     # Jalankan artisan command
     # - /usr/local/bin/php /home/mrkproje/github/main-apps/artisan migrate --force
