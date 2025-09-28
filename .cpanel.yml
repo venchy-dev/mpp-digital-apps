@@ -1,0 +1,10 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mrkproje/public_html
+    # Copy isi folder public Laravel ke public_html
+    - /bin/rsync -av --delete $DEPLOYPATH/../main-apps/public/ $DEPLOYPATH/
+    # Jalankan composer install
+    - /opt/cpanel/composer/bin/composer install --no-dev --optimize-autoloader
+    # Jalankan artisan command
+    - /usr/local/bin/php /home/mrkproje/main-apps/artisan config:cache
+    - /usr/local/bin/php /home/mrkproje/main-apps/artisan route:cache
