@@ -7,7 +7,7 @@ deployment:
     - echo $DEPLOYPATH
 
     # Copy isi folder public Laravel ke public_html
-    - /bin/rsync -av --delete /home/mrkproje/github/main-apps/public/ $DEPLOYPATH/
+    # - /bin/rsync -av --delete /home/mrkproje/github/main-apps/public/ $DEPLOYPATH/
 
     # Install dependency composer di folder Laravel
     # - /opt/cpanel/composer/bin/composer install --no-dev --optimize-autoloader --working-dir=/home/mrkproje/github/main-apps
