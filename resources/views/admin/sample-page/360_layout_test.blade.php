@@ -111,9 +111,9 @@
                             "type": "custom",
                             "createTooltipFunc": InstitutionButton,
                             "createTooltipArgs": {
-                                "label": "Sample Menu 2",
+                                "label": "Disdukcapil Kab. Mimika",
                                 "logo": "{{ asset('general/media/icons/x-icon.png') }}",
-                                "url": "https://subang.go.id",
+                                "url": "https://disdukcapil.mimikakab.go.id",
                                 "logoSize": "35px",
                                 "logoMargin": "0px",
                                 "logoPadding": "10px 8px"
